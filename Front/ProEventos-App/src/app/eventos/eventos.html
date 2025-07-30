@@ -1,0 +1,11 @@
+
+    
+    @for (evento of eventos; track evento.name) {
+        <li>{{ evento.tema }}</li>
+    } @empty {
+        <li>There are no items.</li>
+    }
+    
+    <ngb-alert [dismissible]="false">
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </ngb-alert>
